@@ -6,7 +6,7 @@ env:
 before_install:
 - brew update
 - brew outdated carthage || brew upgrade carthage
-- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+- gem install xcpretty --quiet
 
 script:
 - xcodebuild clean build -project PeriapseNetworking.xcodeproj -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO test | xcpretty -c
