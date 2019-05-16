@@ -4,8 +4,6 @@ env:
 - DESTINATION="OS=8.0,name=iPhone 6" SCHEME="PeriapseNetworking-Universal" SDK=iphoneos
 
 before_install:
-- brew update
-- brew outdated carthage || brew upgrade carthage
 - gem install xcpretty --quiet
 
 script:
