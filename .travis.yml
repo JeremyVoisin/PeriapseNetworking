@@ -7,6 +7,6 @@ before_install:
 - gem install xcpretty --quiet
 
 script:
-- xcodebuild clean build -project PeriapseNetworking.xcodeproj -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO | xcpretty -c
-- xcodebuild test -project PeriapseNetworking.xcodeproj -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Release ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- xcodebuild -target "PeriapseNetworking" -configuration Release -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk "iphoneos"
+- xcodebuild -target "PeriapseNetworking" -configuration Release -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk "iphonesimulator"
 
