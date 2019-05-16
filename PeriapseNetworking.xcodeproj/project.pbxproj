@@ -1,0 +1,1262 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		E65058CD1DDBC982001223FB /* PeriapseNetworking-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E65058CE1DDBC983001223FB /* Build configuration list for PBXAggregateTarget "PeriapseNetworking-Universal" */;
+			buildPhases = (
+				E65058D11DDBC99C001223FB /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "PeriapseNetworking-Universal";
+			productName = "ApsideNetworking-Universal";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		E60076261D4174FA00734743 /* RemoteEntityAttributesTransformerAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E60076241D4174FA00734743 /* RemoteEntityAttributesTransformerAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E60076271D4174FA00734743 /* RemoteEntityAttributesTransformerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E60076251D4174FA00734743 /* RemoteEntityAttributesTransformerAdditions.m */; };
+		E60076321D46CECE00734743 /* RemoteEntityQueryComparatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E60076301D46CECE00734743 /* RemoteEntityQueryComparatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E60076331D46CECE00734743 /* RemoteEntityQueryComparatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E60076311D46CECE00734743 /* RemoteEntityQueryComparatorManager.m */; };
+		E600763D1D4828DB00734743 /* RemoteEntityConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E600763B1D4828DB00734743 /* RemoteEntityConfigManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E600763E1D4828DB00734743 /* RemoteEntityConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E600763C1D4828DB00734743 /* RemoteEntityConfigManager.m */; };
+		E62F5B6A1E4CFE4700D8398F /* WebResponseHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E62F5B691E4CFE4700D8398F /* WebResponseHandlerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E62F5B6D1E4D058000D8398F /* RemoteReadResponseHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E62F5B6B1E4D058000D8398F /* RemoteReadResponseHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E62F5B6E1E4D058000D8398F /* RemoteReadResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E62F5B6C1E4D058000D8398F /* RemoteReadResponseHandler.m */; };
+		E62F5B711E4D06FF00D8398F /* RemoteResponseHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E62F5B6F1E4D06FF00D8398F /* RemoteResponseHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E62F5B721E4D06FF00D8398F /* RemoteResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E62F5B701E4D06FF00D8398F /* RemoteResponseHandler.m */; };
+		E62F5B751E4D147000D8398F /* RemoteCreateResponseHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E62F5B731E4D146F00D8398F /* RemoteCreateResponseHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E62F5B761E4D147000D8398F /* RemoteCreateResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E62F5B741E4D147000D8398F /* RemoteCreateResponseHandler.m */; };
+		E62F5B791E4D151700D8398F /* RemoteUpdateResponseHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E62F5B771E4D151700D8398F /* RemoteUpdateResponseHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E62F5B7A1E4D151700D8398F /* RemoteUpdateResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E62F5B781E4D151700D8398F /* RemoteUpdateResponseHandler.m */; };
+		E62F5B7D1E4D17EB00D8398F /* RemoteDeleteResponseHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E62F5B7B1E4D17EB00D8398F /* RemoteDeleteResponseHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E62F5B7E1E4D17EB00D8398F /* RemoteDeleteResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E62F5B7C1E4D17EB00D8398F /* RemoteDeleteResponseHandler.m */; };
+		E62F5B811E4D20EF00D8398F /* RemoteReadAllResponseHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = E62F5B7F1E4D20EF00D8398F /* RemoteReadAllResponseHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E62F5B821E4D20EF00D8398F /* RemoteReadAllResponseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E62F5B801E4D20EF00D8398F /* RemoteReadAllResponseHandler.m */; };
+		E64903E51D904A5D002AE3BA /* RequestConsistencyRule.h in Headers */ = {isa = PBXBuildFile; fileRef = E64903E31D904A5D002AE3BA /* RequestConsistencyRule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E64903E61D904A5D002AE3BA /* RequestConsistencyRule.m in Sources */ = {isa = PBXBuildFile; fileRef = E64903E41D904A5D002AE3BA /* RequestConsistencyRule.m */; };
+		E64903E91D904B77002AE3BA /* RequestConsistencyContext.h in Headers */ = {isa = PBXBuildFile; fileRef = E64903E71D904B77002AE3BA /* RequestConsistencyContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E64903EA1D904B77002AE3BA /* RequestConsistencyContext.m in Sources */ = {isa = PBXBuildFile; fileRef = E64903E81D904B77002AE3BA /* RequestConsistencyContext.m */; };
+		E64BD2481CC57574003567CE /* DataScenariosManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E64BD2461CC57574003567CE /* DataScenariosManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E64BD2491CC57574003567CE /* DataScenariosManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E64BD2471CC57574003567CE /* DataScenariosManager.m */; };
+		E64BD24B1CC57675003567CE /* DataScenariosEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = E64BD24A1CC57675003567CE /* DataScenariosEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E654A3B81D8750D20000F78F /* WebRequestPoolSaver.h in Headers */ = {isa = PBXBuildFile; fileRef = E654A3B61D8750D20000F78F /* WebRequestPoolSaver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E654A3B91D8750D20000F78F /* WebRequestPoolSaver.m in Sources */ = {isa = PBXBuildFile; fileRef = E654A3B71D8750D20000F78F /* WebRequestPoolSaver.m */; };
+		E654A3BC1D8750E30000F78F /* WebRequestPoolLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = E654A3BA1D8750E30000F78F /* WebRequestPoolLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E654A3BD1D8750E30000F78F /* WebRequestPoolLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E654A3BB1D8750E30000F78F /* WebRequestPoolLoader.m */; };
+		E6770ADE1D8D4E9E00DA96DE /* WebRequestPoolActivityListener.h in Headers */ = {isa = PBXBuildFile; fileRef = E6770ADD1D8D4E9E00DA96DE /* WebRequestPoolActivityListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E699EF5A1D21AEF300C261E7 /* RemoteEntityFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E699EF581D21AEF300C261E7 /* RemoteEntityFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E699EF5B1D21AEF300C261E7 /* RemoteEntityFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E699EF591D21AEF300C261E7 /* RemoteEntityFactory.m */; };
+		E6B25A6E1CB6FF58004AA4E4 /* PeriapseNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A6D1CB6FF58004AA4E4 /* PeriapseNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25A7A1CB6FF58004AA4E4 /* periapse_networkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25A791CB6FF58004AA4E4 /* periapse_networkingTests.m */; };
+		E6B25AD51CB6FFFF004AA4E4 /* NetConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A851CB6FFFF004AA4E4 /* NetConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AD61CB6FFFF004AA4E4 /* NetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25A861CB6FFFF004AA4E4 /* NetConfig.m */; };
+		E6B25AD81CB6FFFF004AA4E4 /* NetworkingFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A891CB6FFFF004AA4E4 /* NetworkingFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AD91CB6FFFF004AA4E4 /* NetworkingFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25A8A1CB6FFFF004AA4E4 /* NetworkingFactory.m */; };
+		E6B25ADA1CB6FFFF004AA4E4 /* NetworkState.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A8C1CB6FFFF004AA4E4 /* NetworkState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25ADB1CB6FFFF004AA4E4 /* NetworkStateHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A8D1CB6FFFF004AA4E4 /* NetworkStateHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25ADC1CB6FFFF004AA4E4 /* NetworkStateHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25A8E1CB6FFFF004AA4E4 /* NetworkStateHelper.m */; };
+		E6B25ADD1CB6FFFF004AA4E4 /* NetworkStateObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A8F1CB6FFFF004AA4E4 /* NetworkStateObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25ADE1CB6FFFF004AA4E4 /* NetworkStateObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25A901CB6FFFF004AA4E4 /* NetworkStateObserver.m */; };
+		E6B25ADF1CB6FFFF004AA4E4 /* NetworkStateSubscriber.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A911CB6FFFF004AA4E4 /* NetworkStateSubscriber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AE01CB6FFFF004AA4E4 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A931CB6FFFF004AA4E4 /* Reachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AE11CB6FFFF004AA4E4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25A941CB6FFFF004AA4E4 /* Reachability.m */; };
+		E6B25AE21CB6FFFF004AA4E4 /* DeleteCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A971CB6FFFF004AA4E4 /* DeleteCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AE31CB6FFFF004AA4E4 /* DeleteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25A981CB6FFFF004AA4E4 /* DeleteCommand.m */; };
+		E6B25AE41CB6FFFF004AA4E4 /* PostCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A991CB6FFFF004AA4E4 /* PostCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AE51CB6FFFF004AA4E4 /* PostCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25A9A1CB6FFFF004AA4E4 /* PostCommand.m */; };
+		E6B25AE61CB6FFFF004AA4E4 /* ReadCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A9B1CB6FFFF004AA4E4 /* ReadCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AE71CB6FFFF004AA4E4 /* ReadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25A9C1CB6FFFF004AA4E4 /* ReadCommand.m */; };
+		E6B25AE81CB6FFFF004AA4E4 /* UpdateCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A9D1CB6FFFF004AA4E4 /* UpdateCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AE91CB6FFFF004AA4E4 /* UpdateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25A9E1CB6FFFF004AA4E4 /* UpdateCommand.m */; };
+		E6B25AEA1CB6FFFF004AA4E4 /* WebCommandProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25A9F1CB6FFFF004AA4E4 /* WebCommandProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AEB1CB6FFFF004AA4E4 /* StandardDeleteCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AA11CB6FFFF004AA4E4 /* StandardDeleteCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AEC1CB6FFFF004AA4E4 /* StandardDeleteCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AA21CB6FFFF004AA4E4 /* StandardDeleteCommand.m */; };
+		E6B25AED1CB6FFFF004AA4E4 /* StandardPostCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AA31CB6FFFF004AA4E4 /* StandardPostCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AEE1CB6FFFF004AA4E4 /* StandardPostCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AA41CB6FFFF004AA4E4 /* StandardPostCommand.m */; };
+		E6B25AEF1CB6FFFF004AA4E4 /* StandardReadCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AA51CB6FFFF004AA4E4 /* StandardReadCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AF01CB6FFFF004AA4E4 /* StandardReadCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AA61CB6FFFF004AA4E4 /* StandardReadCommand.m */; };
+		E6B25AF11CB6FFFF004AA4E4 /* StandardUpdateCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AA71CB6FFFF004AA4E4 /* StandardUpdateCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AF21CB6FFFF004AA4E4 /* StandardUpdateCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AA81CB6FFFF004AA4E4 /* StandardUpdateCommand.m */; };
+		E6B25AF31CB6FFFF004AA4E4 /* StandardWebCommandFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AA91CB6FFFF004AA4E4 /* StandardWebCommandFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AF41CB6FFFF004AA4E4 /* StandardWebCommandFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AAA1CB6FFFF004AA4E4 /* StandardWebCommandFactory.m */; };
+		E6B25AF51CB6FFFF004AA4E4 /* WebCommandFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AAB1CB6FFFF004AA4E4 /* WebCommandFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AF61CB6FFFF004AA4E4 /* WebCommandFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AAC1CB6FFFF004AA4E4 /* WebCommandFactory.m */; };
+		E6B25AF71CB6FFFF004AA4E4 /* WebCommandFactoryProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AAD1CB6FFFF004AA4E4 /* WebCommandFactoryProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AF81CB6FFFF004AA4E4 /* DeleteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AB01CB6FFFF004AA4E4 /* DeleteRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AF91CB6FFFF004AA4E4 /* DeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AB11CB6FFFF004AA4E4 /* DeleteRequest.m */; };
+		E6B25AFA1CB6FFFF004AA4E4 /* PostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AB21CB6FFFF004AA4E4 /* PostRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AFB1CB6FFFF004AA4E4 /* PostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AB31CB6FFFF004AA4E4 /* PostRequest.m */; };
+		E6B25AFC1CB6FFFF004AA4E4 /* ReadRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AB41CB6FFFF004AA4E4 /* ReadRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AFD1CB6FFFF004AA4E4 /* ReadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AB51CB6FFFF004AA4E4 /* ReadRequest.m */; };
+		E6B25AFE1CB6FFFF004AA4E4 /* UpdateRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AB61CB6FFFF004AA4E4 /* UpdateRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25AFF1CB6FFFF004AA4E4 /* UpdateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AB71CB6FFFF004AA4E4 /* UpdateRequest.m */; };
+		E6B25B001CB6FFFF004AA4E4 /* WebRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AB81CB6FFFF004AA4E4 /* WebRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B011CB6FFFF004AA4E4 /* WebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AB91CB6FFFF004AA4E4 /* WebRequest.m */; };
+		E6B25B021CB6FFFF004AA4E4 /* WebRequestProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25ABA1CB6FFFF004AA4E4 /* WebRequestProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B031CB6FFFF004AA4E4 /* StandardDeleteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25ABC1CB6FFFF004AA4E4 /* StandardDeleteRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B041CB6FFFF004AA4E4 /* StandardDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25ABD1CB6FFFF004AA4E4 /* StandardDeleteRequest.m */; };
+		E6B25B051CB6FFFF004AA4E4 /* StandardPostRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25ABE1CB6FFFF004AA4E4 /* StandardPostRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B061CB6FFFF004AA4E4 /* StandardPostRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25ABF1CB6FFFF004AA4E4 /* StandardPostRequest.m */; };
+		E6B25B071CB6FFFF004AA4E4 /* StandardReadRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AC01CB6FFFF004AA4E4 /* StandardReadRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B081CB6FFFF004AA4E4 /* StandardReadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AC11CB6FFFF004AA4E4 /* StandardReadRequest.m */; };
+		E6B25B091CB6FFFF004AA4E4 /* StandardUpdateRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AC21CB6FFFF004AA4E4 /* StandardUpdateRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B0A1CB6FFFF004AA4E4 /* StandardUpdateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AC31CB6FFFF004AA4E4 /* StandardUpdateRequest.m */; };
+		E6B25B0B1CB6FFFF004AA4E4 /* StandardWebRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AC41CB6FFFF004AA4E4 /* StandardWebRequestFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B0C1CB6FFFF004AA4E4 /* StandardWebRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AC51CB6FFFF004AA4E4 /* StandardWebRequestFactory.m */; };
+		E6B25B0D1CB6FFFF004AA4E4 /* WebRequestFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AC61CB6FFFF004AA4E4 /* WebRequestFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B0E1CB6FFFF004AA4E4 /* WebRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AC71CB6FFFF004AA4E4 /* WebRequestFactory.m */; };
+		E6B25B0F1CB6FFFF004AA4E4 /* WebRequestFactoryProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AC81CB6FFFF004AA4E4 /* WebRequestFactoryProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B101CB6FFFF004AA4E4 /* WebRequestPool.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25ACA1CB6FFFF004AA4E4 /* WebRequestPool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B111CB6FFFF004AA4E4 /* WebRequestPool.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25ACB1CB6FFFF004AA4E4 /* WebRequestPool.m */; };
+		E6B25B121CB6FFFF004AA4E4 /* WebRequestPoolItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25ACC1CB6FFFF004AA4E4 /* WebRequestPoolItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B131CB6FFFF004AA4E4 /* WebRequestPoolItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25ACD1CB6FFFF004AA4E4 /* WebRequestPoolItem.m */; };
+		E6B25B141CB6FFFF004AA4E4 /* WebRequestPoolItemDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25ACE1CB6FFFF004AA4E4 /* WebRequestPoolItemDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B151CB6FFFF004AA4E4 /* WebRequestPoolItemFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25ACF1CB6FFFF004AA4E4 /* WebRequestPoolItemFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B161CB6FFFF004AA4E4 /* WebRequestPoolItemFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AD01CB6FFFF004AA4E4 /* WebRequestPoolItemFactory.m */; };
+		E6B25B171CB6FFFF004AA4E4 /* WebRequestURLProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AD21CB6FFFF004AA4E4 /* WebRequestURLProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B25B181CB6FFFF004AA4E4 /* WebRequestURLProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B25AD31CB6FFFF004AA4E4 /* WebRequestURLProperty.m */; };
+		E6B25B191CB6FFFF004AA4E4 /* WebRequestURLPropertyProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B25AD41CB6FFFF004AA4E4 /* WebRequestURLPropertyProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6B9181A1DBA9D52004E483B /* RemoteEntityTransmissionState.h in Headers */ = {isa = PBXBuildFile; fileRef = E6B918191DBA7C53004E483B /* RemoteEntityTransmissionState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6DE1BA61DC77CB000FF4099 /* RemoteEntityTransmissionStateListener.h in Headers */ = {isa = PBXBuildFile; fileRef = E6DE1BA51DC77CB000FF4099 /* RemoteEntityTransmissionStateListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6E6D1FB1E41DD76007C29E1 /* WebRequestSerializerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E6D1FA1E41DD76007C29E1 /* WebRequestSerializerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6E6D1FE1E41DE5C007C29E1 /* JSONWebRequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = E6E6D1FC1E41DE5C007C29E1 /* JSONWebRequestSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6E6D1FF1E41DE5C007C29E1 /* JSONWebRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6E6D1FD1E41DE5C007C29E1 /* JSONWebRequestSerializer.m */; };
+		E6F8ADE11D4037F5001DED3F /* RemoteEntityAliasManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E6F8ADDF1D4037F5001DED3F /* RemoteEntityAliasManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6F8ADE21D4037F5001DED3F /* RemoteEntityAliasManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F8ADE01D4037F5001DED3F /* RemoteEntityAliasManager.m */; };
+		E6FC19541CDBEE0F00C4B865 /* RemoteEntity.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FC19511CDBEE0F00C4B865 /* RemoteEntity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FC19551CDBEE0F00C4B865 /* RemoteEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FC19521CDBEE0F00C4B865 /* RemoteEntity.m */; };
+		E6FC19561CDBEE0F00C4B865 /* RemoteEntityDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FC19531CDBEE0F00C4B865 /* RemoteEntityDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FC198E1CDCA96B00C4B865 /* RemoteEntityURLBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FC198C1CDCA96B00C4B865 /* RemoteEntityURLBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FC198F1CDCA96B00C4B865 /* RemoteEntityURLBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FC198D1CDCA96B00C4B865 /* RemoteEntityURLBuilder.m */; };
+		E6FC19CB1CE399A400C4B865 /* RemoteEntityFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FC19C91CE399A400C4B865 /* RemoteEntityFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FC19CC1CE399A400C4B865 /* RemoteEntityFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FC19CA1CE399A400C4B865 /* RemoteEntityFinder.m */; };
+		E6FC19D01CE39AB700C4B865 /* RemoteEntityUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FC19CE1CE39AB700C4B865 /* RemoteEntityUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FC19D11CE39AB700C4B865 /* RemoteEntityUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FC19CF1CE39AB700C4B865 /* RemoteEntityUpdater.m */; };
+		E6FC19DF1CE39F9500C4B865 /* RemoteEntityMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FC19DD1CE39F9500C4B865 /* RemoteEntityMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FC19E01CE39F9500C4B865 /* RemoteEntityMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FC19DE1CE39F9500C4B865 /* RemoteEntityMapper.m */; };
+		E6FC19E31CE3C0E600C4B865 /* RemoteEntityAttributesTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FC19E11CE3C0E600C4B865 /* RemoteEntityAttributesTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FC19E41CE3C0E600C4B865 /* RemoteEntityAttributesTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FC19E21CE3C0E600C4B865 /* RemoteEntityAttributesTransformer.m */; };
+		E6FC19E81CE3C34A00C4B865 /* RemoteEntityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FC19E61CE3C34A00C4B865 /* RemoteEntityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FC19E91CE3C34A00C4B865 /* RemoteEntityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FC19E71CE3C34A00C4B865 /* RemoteEntityManager.m */; };
+		E6FC19EC1CE3D71000C4B865 /* RemoteEntityManageable.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FC19EA1CE3D71000C4B865 /* RemoteEntityManageable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FC19ED1CE3D71000C4B865 /* RemoteEntityManageable.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FC19EB1CE3D71000C4B865 /* RemoteEntityManageable.m */; };
+		E6FC19F01CE3EA6B00C4B865 /* RemoteEntityWebUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FC19EE1CE3EA6B00C4B865 /* RemoteEntityWebUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6FC19F11CE3EA6B00C4B865 /* RemoteEntityWebUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = E6FC19EF1CE3EA6B00C4B865 /* RemoteEntityWebUpdater.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6B25A761CB6FF58004AA4E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6B25A611CB6FF58004AA4E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6B25A691CB6FF58004AA4E4;
+			remoteInfo = "apside-networking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E60076241D4174FA00734743 /* RemoteEntityAttributesTransformerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityAttributesTransformerAdditions.h; path = ManagedObject/Additions/RemoteEntityAttributesTransformerAdditions.h; sourceTree = "<group>"; };
+		E60076251D4174FA00734743 /* RemoteEntityAttributesTransformerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityAttributesTransformerAdditions.m; path = ManagedObject/Additions/RemoteEntityAttributesTransformerAdditions.m; sourceTree = "<group>"; };
+		E60076301D46CECE00734743 /* RemoteEntityQueryComparatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityQueryComparatorManager.h; path = ManagedObject/QueryComparatorManager/RemoteEntityQueryComparatorManager.h; sourceTree = "<group>"; };
+		E60076311D46CECE00734743 /* RemoteEntityQueryComparatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityQueryComparatorManager.m; path = ManagedObject/QueryComparatorManager/RemoteEntityQueryComparatorManager.m; sourceTree = "<group>"; };
+		E600763B1D4828DB00734743 /* RemoteEntityConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityConfigManager.h; path = ManagedObject/ConfigManager/RemoteEntityConfigManager.h; sourceTree = "<group>"; };
+		E600763C1D4828DB00734743 /* RemoteEntityConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityConfigManager.m; path = ManagedObject/ConfigManager/RemoteEntityConfigManager.m; sourceTree = "<group>"; };
+		E62F5B691E4CFE4700D8398F /* WebResponseHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebResponseHandlerProtocol.h; path = WebResponseHandler/WebResponseHandlerProtocol.h; sourceTree = "<group>"; };
+		E62F5B6B1E4D058000D8398F /* RemoteReadResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteReadResponseHandler.h; path = ManagedObject/WebResponseHandler/RemoteReadResponseHandler.h; sourceTree = "<group>"; };
+		E62F5B6C1E4D058000D8398F /* RemoteReadResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteReadResponseHandler.m; path = ManagedObject/WebResponseHandler/RemoteReadResponseHandler.m; sourceTree = "<group>"; };
+		E62F5B6F1E4D06FF00D8398F /* RemoteResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteResponseHandler.h; path = ManagedObject/WebResponseHandler/RemoteResponseHandler.h; sourceTree = "<group>"; };
+		E62F5B701E4D06FF00D8398F /* RemoteResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteResponseHandler.m; path = ManagedObject/WebResponseHandler/RemoteResponseHandler.m; sourceTree = "<group>"; };
+		E62F5B731E4D146F00D8398F /* RemoteCreateResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteCreateResponseHandler.h; path = ManagedObject/WebResponseHandler/RemoteCreateResponseHandler.h; sourceTree = "<group>"; };
+		E62F5B741E4D147000D8398F /* RemoteCreateResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteCreateResponseHandler.m; path = ManagedObject/WebResponseHandler/RemoteCreateResponseHandler.m; sourceTree = "<group>"; };
+		E62F5B771E4D151700D8398F /* RemoteUpdateResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteUpdateResponseHandler.h; path = ManagedObject/WebResponseHandler/RemoteUpdateResponseHandler.h; sourceTree = "<group>"; };
+		E62F5B781E4D151700D8398F /* RemoteUpdateResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteUpdateResponseHandler.m; path = ManagedObject/WebResponseHandler/RemoteUpdateResponseHandler.m; sourceTree = "<group>"; };
+		E62F5B7B1E4D17EB00D8398F /* RemoteDeleteResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteDeleteResponseHandler.h; path = ManagedObject/WebResponseHandler/RemoteDeleteResponseHandler.h; sourceTree = "<group>"; };
+		E62F5B7C1E4D17EB00D8398F /* RemoteDeleteResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteDeleteResponseHandler.m; path = ManagedObject/WebResponseHandler/RemoteDeleteResponseHandler.m; sourceTree = "<group>"; };
+		E62F5B7F1E4D20EF00D8398F /* RemoteReadAllResponseHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteReadAllResponseHandler.h; path = ManagedObject/WebResponseHandler/RemoteReadAllResponseHandler.h; sourceTree = "<group>"; };
+		E62F5B801E4D20EF00D8398F /* RemoteReadAllResponseHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteReadAllResponseHandler.m; path = ManagedObject/WebResponseHandler/RemoteReadAllResponseHandler.m; sourceTree = "<group>"; };
+		E64903E31D904A5D002AE3BA /* RequestConsistencyRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestConsistencyRule.h; path = Consistency/RequestConsistencyRule.h; sourceTree = "<group>"; };
+		E64903E41D904A5D002AE3BA /* RequestConsistencyRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestConsistencyRule.m; path = Consistency/RequestConsistencyRule.m; sourceTree = "<group>"; };
+		E64903E71D904B77002AE3BA /* RequestConsistencyContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RequestConsistencyContext.h; path = Consistency/RequestConsistencyContext.h; sourceTree = "<group>"; };
+		E64903E81D904B77002AE3BA /* RequestConsistencyContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RequestConsistencyContext.m; path = Consistency/RequestConsistencyContext.m; sourceTree = "<group>"; };
+		E64BD2461CC57574003567CE /* DataScenariosManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataScenariosManager.h; path = "Data scenarios/DataScenariosManager.h"; sourceTree = "<group>"; };
+		E64BD2471CC57574003567CE /* DataScenariosManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataScenariosManager.m; path = "Data scenarios/DataScenariosManager.m"; sourceTree = "<group>"; };
+		E64BD24A1CC57675003567CE /* DataScenariosEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataScenariosEntity.h; path = "Data scenarios/DataScenariosEntity.h"; sourceTree = "<group>"; };
+		E654A3B61D8750D20000F78F /* WebRequestPoolSaver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebRequestPoolSaver.h; path = PoolSaver/WebRequestPoolSaver.h; sourceTree = "<group>"; };
+		E654A3B71D8750D20000F78F /* WebRequestPoolSaver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebRequestPoolSaver.m; path = PoolSaver/WebRequestPoolSaver.m; sourceTree = "<group>"; };
+		E654A3BA1D8750E30000F78F /* WebRequestPoolLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebRequestPoolLoader.h; path = PoolSaver/WebRequestPoolLoader.h; sourceTree = "<group>"; };
+		E654A3BB1D8750E30000F78F /* WebRequestPoolLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebRequestPoolLoader.m; path = PoolSaver/WebRequestPoolLoader.m; sourceTree = "<group>"; };
+		E6770ADD1D8D4E9E00DA96DE /* WebRequestPoolActivityListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestPoolActivityListener.h; sourceTree = "<group>"; };
+		E699EF581D21AEF300C261E7 /* RemoteEntityFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityFactory.h; path = ManagedObject/Factory/RemoteEntityFactory.h; sourceTree = "<group>"; };
+		E699EF591D21AEF300C261E7 /* RemoteEntityFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityFactory.m; path = ManagedObject/Factory/RemoteEntityFactory.m; sourceTree = "<group>"; };
+		E6B25A6A1CB6FF58004AA4E4 /* PeriapseNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PeriapseNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B25A6D1CB6FF58004AA4E4 /* PeriapseNetworking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeriapseNetworking.h; sourceTree = "<group>"; };
+		E6B25A6F1CB6FF58004AA4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6B25A741CB6FF58004AA4E4 /* PeriapseNetworking.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeriapseNetworking.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B25A791CB6FF58004AA4E4 /* periapse_networkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = periapse_networkingTests.m; sourceTree = "<group>"; };
+		E6B25A7B1CB6FF58004AA4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6B25A851CB6FFFF004AA4E4 /* NetConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetConfig.h; sourceTree = "<group>"; };
+		E6B25A861CB6FFFF004AA4E4 /* NetConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetConfig.m; sourceTree = "<group>"; };
+		E6B25A891CB6FFFF004AA4E4 /* NetworkingFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingFactory.h; sourceTree = "<group>"; };
+		E6B25A8A1CB6FFFF004AA4E4 /* NetworkingFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkingFactory.m; sourceTree = "<group>"; };
+		E6B25A8C1CB6FFFF004AA4E4 /* NetworkState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkState.h; sourceTree = "<group>"; };
+		E6B25A8D1CB6FFFF004AA4E4 /* NetworkStateHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkStateHelper.h; sourceTree = "<group>"; };
+		E6B25A8E1CB6FFFF004AA4E4 /* NetworkStateHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkStateHelper.m; sourceTree = "<group>"; };
+		E6B25A8F1CB6FFFF004AA4E4 /* NetworkStateObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkStateObserver.h; sourceTree = "<group>"; };
+		E6B25A901CB6FFFF004AA4E4 /* NetworkStateObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkStateObserver.m; sourceTree = "<group>"; };
+		E6B25A911CB6FFFF004AA4E4 /* NetworkStateSubscriber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkStateSubscriber.h; sourceTree = "<group>"; };
+		E6B25A931CB6FFFF004AA4E4 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E6B25A941CB6FFFF004AA4E4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E6B25A971CB6FFFF004AA4E4 /* DeleteCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteCommand.h; sourceTree = "<group>"; };
+		E6B25A981CB6FFFF004AA4E4 /* DeleteCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteCommand.m; sourceTree = "<group>"; };
+		E6B25A991CB6FFFF004AA4E4 /* PostCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostCommand.h; sourceTree = "<group>"; };
+		E6B25A9A1CB6FFFF004AA4E4 /* PostCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostCommand.m; sourceTree = "<group>"; };
+		E6B25A9B1CB6FFFF004AA4E4 /* ReadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadCommand.h; sourceTree = "<group>"; };
+		E6B25A9C1CB6FFFF004AA4E4 /* ReadCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadCommand.m; sourceTree = "<group>"; };
+		E6B25A9D1CB6FFFF004AA4E4 /* UpdateCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateCommand.h; sourceTree = "<group>"; };
+		E6B25A9E1CB6FFFF004AA4E4 /* UpdateCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateCommand.m; sourceTree = "<group>"; };
+		E6B25A9F1CB6FFFF004AA4E4 /* WebCommandProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebCommandProtocol.h; sourceTree = "<group>"; };
+		E6B25AA11CB6FFFF004AA4E4 /* StandardDeleteCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardDeleteCommand.h; sourceTree = "<group>"; };
+		E6B25AA21CB6FFFF004AA4E4 /* StandardDeleteCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardDeleteCommand.m; sourceTree = "<group>"; };
+		E6B25AA31CB6FFFF004AA4E4 /* StandardPostCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardPostCommand.h; sourceTree = "<group>"; };
+		E6B25AA41CB6FFFF004AA4E4 /* StandardPostCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardPostCommand.m; sourceTree = "<group>"; };
+		E6B25AA51CB6FFFF004AA4E4 /* StandardReadCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardReadCommand.h; sourceTree = "<group>"; };
+		E6B25AA61CB6FFFF004AA4E4 /* StandardReadCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardReadCommand.m; sourceTree = "<group>"; };
+		E6B25AA71CB6FFFF004AA4E4 /* StandardUpdateCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardUpdateCommand.h; sourceTree = "<group>"; };
+		E6B25AA81CB6FFFF004AA4E4 /* StandardUpdateCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardUpdateCommand.m; sourceTree = "<group>"; };
+		E6B25AA91CB6FFFF004AA4E4 /* StandardWebCommandFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardWebCommandFactory.h; sourceTree = "<group>"; };
+		E6B25AAA1CB6FFFF004AA4E4 /* StandardWebCommandFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardWebCommandFactory.m; sourceTree = "<group>"; };
+		E6B25AAB1CB6FFFF004AA4E4 /* WebCommandFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebCommandFactory.h; sourceTree = "<group>"; };
+		E6B25AAC1CB6FFFF004AA4E4 /* WebCommandFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebCommandFactory.m; sourceTree = "<group>"; };
+		E6B25AAD1CB6FFFF004AA4E4 /* WebCommandFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebCommandFactoryProtocol.h; sourceTree = "<group>"; };
+		E6B25AB01CB6FFFF004AA4E4 /* DeleteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteRequest.h; sourceTree = "<group>"; };
+		E6B25AB11CB6FFFF004AA4E4 /* DeleteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteRequest.m; sourceTree = "<group>"; };
+		E6B25AB21CB6FFFF004AA4E4 /* PostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostRequest.h; sourceTree = "<group>"; };
+		E6B25AB31CB6FFFF004AA4E4 /* PostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostRequest.m; sourceTree = "<group>"; };
+		E6B25AB41CB6FFFF004AA4E4 /* ReadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadRequest.h; sourceTree = "<group>"; };
+		E6B25AB51CB6FFFF004AA4E4 /* ReadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadRequest.m; sourceTree = "<group>"; };
+		E6B25AB61CB6FFFF004AA4E4 /* UpdateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateRequest.h; sourceTree = "<group>"; };
+		E6B25AB71CB6FFFF004AA4E4 /* UpdateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateRequest.m; sourceTree = "<group>"; };
+		E6B25AB81CB6FFFF004AA4E4 /* WebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequest.h; sourceTree = "<group>"; };
+		E6B25AB91CB6FFFF004AA4E4 /* WebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequest.m; sourceTree = "<group>"; };
+		E6B25ABA1CB6FFFF004AA4E4 /* WebRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestProtocol.h; sourceTree = "<group>"; };
+		E6B25ABC1CB6FFFF004AA4E4 /* StandardDeleteRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardDeleteRequest.h; sourceTree = "<group>"; };
+		E6B25ABD1CB6FFFF004AA4E4 /* StandardDeleteRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardDeleteRequest.m; sourceTree = "<group>"; };
+		E6B25ABE1CB6FFFF004AA4E4 /* StandardPostRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardPostRequest.h; sourceTree = "<group>"; };
+		E6B25ABF1CB6FFFF004AA4E4 /* StandardPostRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardPostRequest.m; sourceTree = "<group>"; };
+		E6B25AC01CB6FFFF004AA4E4 /* StandardReadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardReadRequest.h; sourceTree = "<group>"; };
+		E6B25AC11CB6FFFF004AA4E4 /* StandardReadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardReadRequest.m; sourceTree = "<group>"; };
+		E6B25AC21CB6FFFF004AA4E4 /* StandardUpdateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardUpdateRequest.h; sourceTree = "<group>"; };
+		E6B25AC31CB6FFFF004AA4E4 /* StandardUpdateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardUpdateRequest.m; sourceTree = "<group>"; };
+		E6B25AC41CB6FFFF004AA4E4 /* StandardWebRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardWebRequestFactory.h; sourceTree = "<group>"; };
+		E6B25AC51CB6FFFF004AA4E4 /* StandardWebRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardWebRequestFactory.m; sourceTree = "<group>"; };
+		E6B25AC61CB6FFFF004AA4E4 /* WebRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestFactory.h; sourceTree = "<group>"; };
+		E6B25AC71CB6FFFF004AA4E4 /* WebRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequestFactory.m; sourceTree = "<group>"; };
+		E6B25AC81CB6FFFF004AA4E4 /* WebRequestFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestFactoryProtocol.h; sourceTree = "<group>"; };
+		E6B25ACA1CB6FFFF004AA4E4 /* WebRequestPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestPool.h; sourceTree = "<group>"; };
+		E6B25ACB1CB6FFFF004AA4E4 /* WebRequestPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequestPool.m; sourceTree = "<group>"; };
+		E6B25ACC1CB6FFFF004AA4E4 /* WebRequestPoolItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestPoolItem.h; sourceTree = "<group>"; };
+		E6B25ACD1CB6FFFF004AA4E4 /* WebRequestPoolItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequestPoolItem.m; sourceTree = "<group>"; };
+		E6B25ACE1CB6FFFF004AA4E4 /* WebRequestPoolItemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestPoolItemDelegate.h; sourceTree = "<group>"; };
+		E6B25ACF1CB6FFFF004AA4E4 /* WebRequestPoolItemFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestPoolItemFactory.h; sourceTree = "<group>"; };
+		E6B25AD01CB6FFFF004AA4E4 /* WebRequestPoolItemFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequestPoolItemFactory.m; sourceTree = "<group>"; };
+		E6B25AD21CB6FFFF004AA4E4 /* WebRequestURLProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestURLProperty.h; sourceTree = "<group>"; };
+		E6B25AD31CB6FFFF004AA4E4 /* WebRequestURLProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequestURLProperty.m; sourceTree = "<group>"; };
+		E6B25AD41CB6FFFF004AA4E4 /* WebRequestURLPropertyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestURLPropertyProtocol.h; sourceTree = "<group>"; };
+		E6B918191DBA7C53004E483B /* RemoteEntityTransmissionState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RemoteEntityTransmissionState.h; path = ManagedObject/RemoteEntityTransmissionState.h; sourceTree = "<group>"; };
+		E6DE1BA51DC77CB000FF4099 /* RemoteEntityTransmissionStateListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityTransmissionStateListener.h; path = ManagedObject/RemoteEntityTransmissionStateListener.h; sourceTree = "<group>"; };
+		E6E6D1FA1E41DD76007C29E1 /* WebRequestSerializerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebRequestSerializerProtocol.h; path = Serializer/WebRequestSerializerProtocol.h; sourceTree = "<group>"; };
+		E6E6D1FC1E41DE5C007C29E1 /* JSONWebRequestSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONWebRequestSerializer.h; path = Serializer/JSONWebRequestSerializer.h; sourceTree = "<group>"; };
+		E6E6D1FD1E41DE5C007C29E1 /* JSONWebRequestSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONWebRequestSerializer.m; path = Serializer/JSONWebRequestSerializer.m; sourceTree = "<group>"; };
+		E6F8ADDF1D4037F5001DED3F /* RemoteEntityAliasManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityAliasManager.h; path = ManagedObject/AliasManager/RemoteEntityAliasManager.h; sourceTree = "<group>"; };
+		E6F8ADE01D4037F5001DED3F /* RemoteEntityAliasManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityAliasManager.m; path = ManagedObject/AliasManager/RemoteEntityAliasManager.m; sourceTree = "<group>"; };
+		E6FC19511CDBEE0F00C4B865 /* RemoteEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntity.h; path = ManagedObject/RemoteEntity.h; sourceTree = "<group>"; };
+		E6FC19521CDBEE0F00C4B865 /* RemoteEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntity.m; path = ManagedObject/RemoteEntity.m; sourceTree = "<group>"; };
+		E6FC19531CDBEE0F00C4B865 /* RemoteEntityDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityDelegate.h; path = ManagedObject/RemoteEntityDelegate.h; sourceTree = "<group>"; };
+		E6FC198C1CDCA96B00C4B865 /* RemoteEntityURLBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityURLBuilder.h; path = ManagedObject/RemoteEntityURLBuilder.h; sourceTree = "<group>"; };
+		E6FC198D1CDCA96B00C4B865 /* RemoteEntityURLBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityURLBuilder.m; path = ManagedObject/RemoteEntityURLBuilder.m; sourceTree = "<group>"; };
+		E6FC19961CDCC1C300C4B865 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E6FC19C91CE399A400C4B865 /* RemoteEntityFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityFinder.h; path = ManagedObject/Finder/RemoteEntityFinder.h; sourceTree = "<group>"; };
+		E6FC19CA1CE399A400C4B865 /* RemoteEntityFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityFinder.m; path = ManagedObject/Finder/RemoteEntityFinder.m; sourceTree = "<group>"; };
+		E6FC19CE1CE39AB700C4B865 /* RemoteEntityUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityUpdater.h; path = ManagedObject/Updater/RemoteEntityUpdater.h; sourceTree = "<group>"; };
+		E6FC19CF1CE39AB700C4B865 /* RemoteEntityUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityUpdater.m; path = ManagedObject/Updater/RemoteEntityUpdater.m; sourceTree = "<group>"; };
+		E6FC19DD1CE39F9500C4B865 /* RemoteEntityMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityMapper.h; path = ManagedObject/Mappers/RemoteEntityMapper.h; sourceTree = "<group>"; };
+		E6FC19DE1CE39F9500C4B865 /* RemoteEntityMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityMapper.m; path = ManagedObject/Mappers/RemoteEntityMapper.m; sourceTree = "<group>"; };
+		E6FC19E11CE3C0E600C4B865 /* RemoteEntityAttributesTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityAttributesTransformer.h; path = ManagedObject/Mappers/RemoteEntityAttributesTransformer.h; sourceTree = "<group>"; };
+		E6FC19E21CE3C0E600C4B865 /* RemoteEntityAttributesTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityAttributesTransformer.m; path = ManagedObject/Mappers/RemoteEntityAttributesTransformer.m; sourceTree = "<group>"; };
+		E6FC19E61CE3C34A00C4B865 /* RemoteEntityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityManager.h; path = ManagedObject/Manager/RemoteEntityManager.h; sourceTree = "<group>"; };
+		E6FC19E71CE3C34A00C4B865 /* RemoteEntityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityManager.m; path = ManagedObject/Manager/RemoteEntityManager.m; sourceTree = "<group>"; };
+		E6FC19EA1CE3D71000C4B865 /* RemoteEntityManageable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityManageable.h; path = ManagedObject/Manager/RemoteEntityManageable.h; sourceTree = "<group>"; };
+		E6FC19EB1CE3D71000C4B865 /* RemoteEntityManageable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityManageable.m; path = ManagedObject/Manager/RemoteEntityManageable.m; sourceTree = "<group>"; };
+		E6FC19EE1CE3EA6B00C4B865 /* RemoteEntityWebUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RemoteEntityWebUpdater.h; path = ManagedObject/Updater/RemoteEntityWebUpdater.h; sourceTree = "<group>"; };
+		E6FC19EF1CE3EA6B00C4B865 /* RemoteEntityWebUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RemoteEntityWebUpdater.m; path = ManagedObject/Updater/RemoteEntityWebUpdater.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6B25A661CB6FF58004AA4E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B25A711CB6FF58004AA4E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E60076231D4174B800734743 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				E60076241D4174FA00734743 /* RemoteEntityAttributesTransformerAdditions.h */,
+				E60076251D4174FA00734743 /* RemoteEntityAttributesTransformerAdditions.m */,
+			);
+			name = Additions;
+			sourceTree = "<group>";
+		};
+		E600762F1D46CE7B00734743 /* QueryComparatorManager */ = {
+			isa = PBXGroup;
+			children = (
+				E60076301D46CECE00734743 /* RemoteEntityQueryComparatorManager.h */,
+				E60076311D46CECE00734743 /* RemoteEntityQueryComparatorManager.m */,
+			);
+			name = QueryComparatorManager;
+			sourceTree = "<group>";
+		};
+		E600763A1D48287200734743 /* ConfigManager */ = {
+			isa = PBXGroup;
+			children = (
+				E600763B1D4828DB00734743 /* RemoteEntityConfigManager.h */,
+				E600763C1D4828DB00734743 /* RemoteEntityConfigManager.m */,
+			);
+			name = ConfigManager;
+			sourceTree = "<group>";
+		};
+		E62F5B671E4CFD1600D8398F /* WebResponseHandler */ = {
+			isa = PBXGroup;
+			children = (
+				E62F5B6B1E4D058000D8398F /* RemoteReadResponseHandler.h */,
+				E62F5B6C1E4D058000D8398F /* RemoteReadResponseHandler.m */,
+				E62F5B6F1E4D06FF00D8398F /* RemoteResponseHandler.h */,
+				E62F5B701E4D06FF00D8398F /* RemoteResponseHandler.m */,
+				E62F5B731E4D146F00D8398F /* RemoteCreateResponseHandler.h */,
+				E62F5B741E4D147000D8398F /* RemoteCreateResponseHandler.m */,
+				E62F5B771E4D151700D8398F /* RemoteUpdateResponseHandler.h */,
+				E62F5B781E4D151700D8398F /* RemoteUpdateResponseHandler.m */,
+				E62F5B7B1E4D17EB00D8398F /* RemoteDeleteResponseHandler.h */,
+				E62F5B7C1E4D17EB00D8398F /* RemoteDeleteResponseHandler.m */,
+				E62F5B7F1E4D20EF00D8398F /* RemoteReadAllResponseHandler.h */,
+				E62F5B801E4D20EF00D8398F /* RemoteReadAllResponseHandler.m */,
+			);
+			name = WebResponseHandler;
+			sourceTree = "<group>";
+		};
+		E62F5B681E4CFE0B00D8398F /* WebResponseHandler */ = {
+			isa = PBXGroup;
+			children = (
+				E62F5B691E4CFE4700D8398F /* WebResponseHandlerProtocol.h */,
+			);
+			name = WebResponseHandler;
+			sourceTree = "<group>";
+		};
+		E64903E21D9049B5002AE3BA /* Consistency */ = {
+			isa = PBXGroup;
+			children = (
+				E64903E31D904A5D002AE3BA /* RequestConsistencyRule.h */,
+				E64903E41D904A5D002AE3BA /* RequestConsistencyRule.m */,
+				E64903E71D904B77002AE3BA /* RequestConsistencyContext.h */,
+				E64903E81D904B77002AE3BA /* RequestConsistencyContext.m */,
+			);
+			name = Consistency;
+			sourceTree = "<group>";
+		};
+		E64BD2451CC57485003567CE /* Data scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				E64BD2461CC57574003567CE /* DataScenariosManager.h */,
+				E64BD2471CC57574003567CE /* DataScenariosManager.m */,
+				E64BD24A1CC57675003567CE /* DataScenariosEntity.h */,
+			);
+			name = "Data scenarios";
+			sourceTree = "<group>";
+		};
+		E654A3B51D874FA90000F78F /* PoolSaver */ = {
+			isa = PBXGroup;
+			children = (
+				E654A3B61D8750D20000F78F /* WebRequestPoolSaver.h */,
+				E654A3B71D8750D20000F78F /* WebRequestPoolSaver.m */,
+				E654A3BA1D8750E30000F78F /* WebRequestPoolLoader.h */,
+				E654A3BB1D8750E30000F78F /* WebRequestPoolLoader.m */,
+			);
+			name = PoolSaver;
+			sourceTree = "<group>";
+		};
+		E699EF571D21AE9500C261E7 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				E699EF581D21AEF300C261E7 /* RemoteEntityFactory.h */,
+				E699EF591D21AEF300C261E7 /* RemoteEntityFactory.m */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		E6B25A601CB6FF58004AA4E4 = {
+			isa = PBXGroup;
+			children = (
+				E6FC19961CDCC1C300C4B865 /* CoreData.framework */,
+				E6B25A6C1CB6FF58004AA4E4 /* pariapse-networking */,
+				E6B25A781CB6FF58004AA4E4 /* periapse-networkingTests */,
+				E6B25A6B1CB6FF58004AA4E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6B25A6B1CB6FF58004AA4E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25A6A1CB6FF58004AA4E4 /* PeriapseNetworking.framework */,
+				E6B25A741CB6FF58004AA4E4 /* PeriapseNetworking.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6B25A6C1CB6FF58004AA4E4 /* pariapse-networking */ = {
+			isa = PBXGroup;
+			children = (
+				E6E6D1F91E41DAC8007C29E1 /* Serializer */,
+				E6FC19461CDBEAB200C4B865 /* ManagedObject */,
+				E64903E21D9049B5002AE3BA /* Consistency */,
+				E64BD2451CC57485003567CE /* Data scenarios */,
+				E6B25A841CB6FFFF004AA4E4 /* NetworkingConfiguration */,
+				E6B25A881CB6FFFF004AA4E4 /* NetworkingFactory */,
+				E6B25A8B1CB6FFFF004AA4E4 /* NetworkState */,
+				E6B25A921CB6FFFF004AA4E4 /* Reachability */,
+				E62F5B681E4CFE0B00D8398F /* WebResponseHandler */,
+				E6B25A951CB6FFFF004AA4E4 /* WebCommandFactories */,
+				E6B25AAE1CB6FFFF004AA4E4 /* WebRequestFactories */,
+				E6B25AC91CB6FFFF004AA4E4 /* WebRequestPool */,
+				E6B25AD11CB6FFFF004AA4E4 /* WebRequestURLProperties */,
+				E6B25A6D1CB6FF58004AA4E4 /* PeriapseNetworking.h */,
+				E6B25A6F1CB6FF58004AA4E4 /* Info.plist */,
+			);
+			path = "pariapse-networking";
+			sourceTree = "<group>";
+		};
+		E6B25A781CB6FF58004AA4E4 /* periapse-networkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25A791CB6FF58004AA4E4 /* periapse_networkingTests.m */,
+				E6B25A7B1CB6FF58004AA4E4 /* Info.plist */,
+			);
+			path = "periapse-networkingTests";
+			sourceTree = "<group>";
+		};
+		E6B25A841CB6FFFF004AA4E4 /* NetworkingConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25A851CB6FFFF004AA4E4 /* NetConfig.h */,
+				E6B25A861CB6FFFF004AA4E4 /* NetConfig.m */,
+			);
+			path = NetworkingConfiguration;
+			sourceTree = "<group>";
+		};
+		E6B25A881CB6FFFF004AA4E4 /* NetworkingFactory */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25A891CB6FFFF004AA4E4 /* NetworkingFactory.h */,
+				E6B25A8A1CB6FFFF004AA4E4 /* NetworkingFactory.m */,
+			);
+			path = NetworkingFactory;
+			sourceTree = "<group>";
+		};
+		E6B25A8B1CB6FFFF004AA4E4 /* NetworkState */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25A8C1CB6FFFF004AA4E4 /* NetworkState.h */,
+				E6B25A8D1CB6FFFF004AA4E4 /* NetworkStateHelper.h */,
+				E6B25A8E1CB6FFFF004AA4E4 /* NetworkStateHelper.m */,
+				E6B25A8F1CB6FFFF004AA4E4 /* NetworkStateObserver.h */,
+				E6B25A901CB6FFFF004AA4E4 /* NetworkStateObserver.m */,
+				E6B25A911CB6FFFF004AA4E4 /* NetworkStateSubscriber.h */,
+			);
+			path = NetworkState;
+			sourceTree = "<group>";
+		};
+		E6B25A921CB6FFFF004AA4E4 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25A931CB6FFFF004AA4E4 /* Reachability.h */,
+				E6B25A941CB6FFFF004AA4E4 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		E6B25A951CB6FFFF004AA4E4 /* WebCommandFactories */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25A961CB6FFFF004AA4E4 /* AbstractWebCommand */,
+				E6B25AA01CB6FFFF004AA4E4 /* StandardWebCommand */,
+				E6B25AA91CB6FFFF004AA4E4 /* StandardWebCommandFactory.h */,
+				E6B25AAA1CB6FFFF004AA4E4 /* StandardWebCommandFactory.m */,
+				E6B25AAB1CB6FFFF004AA4E4 /* WebCommandFactory.h */,
+				E6B25AAC1CB6FFFF004AA4E4 /* WebCommandFactory.m */,
+				E6B25AAD1CB6FFFF004AA4E4 /* WebCommandFactoryProtocol.h */,
+			);
+			path = WebCommandFactories;
+			sourceTree = "<group>";
+		};
+		E6B25A961CB6FFFF004AA4E4 /* AbstractWebCommand */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25A971CB6FFFF004AA4E4 /* DeleteCommand.h */,
+				E6B25A981CB6FFFF004AA4E4 /* DeleteCommand.m */,
+				E6B25A991CB6FFFF004AA4E4 /* PostCommand.h */,
+				E6B25A9A1CB6FFFF004AA4E4 /* PostCommand.m */,
+				E6B25A9B1CB6FFFF004AA4E4 /* ReadCommand.h */,
+				E6B25A9C1CB6FFFF004AA4E4 /* ReadCommand.m */,
+				E6B25A9D1CB6FFFF004AA4E4 /* UpdateCommand.h */,
+				E6B25A9E1CB6FFFF004AA4E4 /* UpdateCommand.m */,
+				E6B25A9F1CB6FFFF004AA4E4 /* WebCommandProtocol.h */,
+			);
+			path = AbstractWebCommand;
+			sourceTree = "<group>";
+		};
+		E6B25AA01CB6FFFF004AA4E4 /* StandardWebCommand */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25AA11CB6FFFF004AA4E4 /* StandardDeleteCommand.h */,
+				E6B25AA21CB6FFFF004AA4E4 /* StandardDeleteCommand.m */,
+				E6B25AA31CB6FFFF004AA4E4 /* StandardPostCommand.h */,
+				E6B25AA41CB6FFFF004AA4E4 /* StandardPostCommand.m */,
+				E6B25AA51CB6FFFF004AA4E4 /* StandardReadCommand.h */,
+				E6B25AA61CB6FFFF004AA4E4 /* StandardReadCommand.m */,
+				E6B25AA71CB6FFFF004AA4E4 /* StandardUpdateCommand.h */,
+				E6B25AA81CB6FFFF004AA4E4 /* StandardUpdateCommand.m */,
+			);
+			path = StandardWebCommand;
+			sourceTree = "<group>";
+		};
+		E6B25AAE1CB6FFFF004AA4E4 /* WebRequestFactories */ = {
+			isa = PBXGroup;
+			children = (
+				E654A3B51D874FA90000F78F /* PoolSaver */,
+				E6B25AAF1CB6FFFF004AA4E4 /* AbstractWebRequest */,
+				E6B25ABB1CB6FFFF004AA4E4 /* StandardWebRequest */,
+				E6B25AC41CB6FFFF004AA4E4 /* StandardWebRequestFactory.h */,
+				E6B25AC51CB6FFFF004AA4E4 /* StandardWebRequestFactory.m */,
+				E6B25AC61CB6FFFF004AA4E4 /* WebRequestFactory.h */,
+				E6B25AC71CB6FFFF004AA4E4 /* WebRequestFactory.m */,
+				E6B25AC81CB6FFFF004AA4E4 /* WebRequestFactoryProtocol.h */,
+			);
+			path = WebRequestFactories;
+			sourceTree = "<group>";
+		};
+		E6B25AAF1CB6FFFF004AA4E4 /* AbstractWebRequest */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25AB01CB6FFFF004AA4E4 /* DeleteRequest.h */,
+				E6B25AB11CB6FFFF004AA4E4 /* DeleteRequest.m */,
+				E6B25AB21CB6FFFF004AA4E4 /* PostRequest.h */,
+				E6B25AB31CB6FFFF004AA4E4 /* PostRequest.m */,
+				E6B25AB41CB6FFFF004AA4E4 /* ReadRequest.h */,
+				E6B25AB51CB6FFFF004AA4E4 /* ReadRequest.m */,
+				E6B25AB61CB6FFFF004AA4E4 /* UpdateRequest.h */,
+				E6B25AB71CB6FFFF004AA4E4 /* UpdateRequest.m */,
+				E6B25AB81CB6FFFF004AA4E4 /* WebRequest.h */,
+				E6B25AB91CB6FFFF004AA4E4 /* WebRequest.m */,
+				E6B25ABA1CB6FFFF004AA4E4 /* WebRequestProtocol.h */,
+			);
+			path = AbstractWebRequest;
+			sourceTree = "<group>";
+		};
+		E6B25ABB1CB6FFFF004AA4E4 /* StandardWebRequest */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25ABC1CB6FFFF004AA4E4 /* StandardDeleteRequest.h */,
+				E6B25ABD1CB6FFFF004AA4E4 /* StandardDeleteRequest.m */,
+				E6B25ABE1CB6FFFF004AA4E4 /* StandardPostRequest.h */,
+				E6B25ABF1CB6FFFF004AA4E4 /* StandardPostRequest.m */,
+				E6B25AC01CB6FFFF004AA4E4 /* StandardReadRequest.h */,
+				E6B25AC11CB6FFFF004AA4E4 /* StandardReadRequest.m */,
+				E6B25AC21CB6FFFF004AA4E4 /* StandardUpdateRequest.h */,
+				E6B25AC31CB6FFFF004AA4E4 /* StandardUpdateRequest.m */,
+			);
+			path = StandardWebRequest;
+			sourceTree = "<group>";
+		};
+		E6B25AC91CB6FFFF004AA4E4 /* WebRequestPool */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25ACA1CB6FFFF004AA4E4 /* WebRequestPool.h */,
+				E6B25ACB1CB6FFFF004AA4E4 /* WebRequestPool.m */,
+				E6B25ACC1CB6FFFF004AA4E4 /* WebRequestPoolItem.h */,
+				E6B25ACD1CB6FFFF004AA4E4 /* WebRequestPoolItem.m */,
+				E6B25ACE1CB6FFFF004AA4E4 /* WebRequestPoolItemDelegate.h */,
+				E6B25ACF1CB6FFFF004AA4E4 /* WebRequestPoolItemFactory.h */,
+				E6B25AD01CB6FFFF004AA4E4 /* WebRequestPoolItemFactory.m */,
+				E6770ADD1D8D4E9E00DA96DE /* WebRequestPoolActivityListener.h */,
+			);
+			path = WebRequestPool;
+			sourceTree = "<group>";
+		};
+		E6B25AD11CB6FFFF004AA4E4 /* WebRequestURLProperties */ = {
+			isa = PBXGroup;
+			children = (
+				E6B25AD21CB6FFFF004AA4E4 /* WebRequestURLProperty.h */,
+				E6B25AD31CB6FFFF004AA4E4 /* WebRequestURLProperty.m */,
+				E6B25AD41CB6FFFF004AA4E4 /* WebRequestURLPropertyProtocol.h */,
+			);
+			path = WebRequestURLProperties;
+			sourceTree = "<group>";
+		};
+		E6E6D1F91E41DAC8007C29E1 /* Serializer */ = {
+			isa = PBXGroup;
+			children = (
+				E6E6D1FA1E41DD76007C29E1 /* WebRequestSerializerProtocol.h */,
+				E6E6D1FC1E41DE5C007C29E1 /* JSONWebRequestSerializer.h */,
+				E6E6D1FD1E41DE5C007C29E1 /* JSONWebRequestSerializer.m */,
+			);
+			name = Serializer;
+			sourceTree = "<group>";
+		};
+		E6F8ADDE1D4037CA001DED3F /* AliasManager */ = {
+			isa = PBXGroup;
+			children = (
+				E6F8ADDF1D4037F5001DED3F /* RemoteEntityAliasManager.h */,
+				E6F8ADE01D4037F5001DED3F /* RemoteEntityAliasManager.m */,
+			);
+			name = AliasManager;
+			sourceTree = "<group>";
+		};
+		E6FC19461CDBEAB200C4B865 /* ManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				E62F5B671E4CFD1600D8398F /* WebResponseHandler */,
+				E600763A1D48287200734743 /* ConfigManager */,
+				E600762F1D46CE7B00734743 /* QueryComparatorManager */,
+				E60076231D4174B800734743 /* Additions */,
+				E6F8ADDE1D4037CA001DED3F /* AliasManager */,
+				E699EF571D21AE9500C261E7 /* Factory */,
+				E6FC19E51CE3C2E200C4B865 /* Manager */,
+				E6FC19D41CE39E1700C4B865 /* Mappers */,
+				E6FC19D31CE39C5C00C4B865 /* URLBuilder */,
+				E6FC19D21CE39C3D00C4B865 /* Entity */,
+				E6FC19CD1CE39A6B00C4B865 /* Updater */,
+				E6FC19C81CE398E800C4B865 /* Finder */,
+			);
+			name = ManagedObject;
+			sourceTree = "<group>";
+		};
+		E6FC19C81CE398E800C4B865 /* Finder */ = {
+			isa = PBXGroup;
+			children = (
+				E6FC19C91CE399A400C4B865 /* RemoteEntityFinder.h */,
+				E6FC19CA1CE399A400C4B865 /* RemoteEntityFinder.m */,
+			);
+			name = Finder;
+			sourceTree = "<group>";
+		};
+		E6FC19CD1CE39A6B00C4B865 /* Updater */ = {
+			isa = PBXGroup;
+			children = (
+				E6FC19CE1CE39AB700C4B865 /* RemoteEntityUpdater.h */,
+				E6FC19CF1CE39AB700C4B865 /* RemoteEntityUpdater.m */,
+				E6FC19EE1CE3EA6B00C4B865 /* RemoteEntityWebUpdater.h */,
+				E6FC19EF1CE3EA6B00C4B865 /* RemoteEntityWebUpdater.m */,
+			);
+			name = Updater;
+			sourceTree = "<group>";
+		};
+		E6FC19D21CE39C3D00C4B865 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E6FC19511CDBEE0F00C4B865 /* RemoteEntity.h */,
+				E6FC19521CDBEE0F00C4B865 /* RemoteEntity.m */,
+				E6FC19531CDBEE0F00C4B865 /* RemoteEntityDelegate.h */,
+				E6B918191DBA7C53004E483B /* RemoteEntityTransmissionState.h */,
+				E6DE1BA51DC77CB000FF4099 /* RemoteEntityTransmissionStateListener.h */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		E6FC19D31CE39C5C00C4B865 /* URLBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				E6FC198C1CDCA96B00C4B865 /* RemoteEntityURLBuilder.h */,
+				E6FC198D1CDCA96B00C4B865 /* RemoteEntityURLBuilder.m */,
+			);
+			name = URLBuilder;
+			sourceTree = "<group>";
+		};
+		E6FC19D41CE39E1700C4B865 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				E6FC19DD1CE39F9500C4B865 /* RemoteEntityMapper.h */,
+				E6FC19DE1CE39F9500C4B865 /* RemoteEntityMapper.m */,
+				E6FC19E11CE3C0E600C4B865 /* RemoteEntityAttributesTransformer.h */,
+				E6FC19E21CE3C0E600C4B865 /* RemoteEntityAttributesTransformer.m */,
+			);
+			name = Mappers;
+			sourceTree = "<group>";
+		};
+		E6FC19E51CE3C2E200C4B865 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				E6FC19EA1CE3D71000C4B865 /* RemoteEntityManageable.h */,
+				E6FC19EB1CE3D71000C4B865 /* RemoteEntityManageable.m */,
+				E6FC19E61CE3C34A00C4B865 /* RemoteEntityManager.h */,
+				E6FC19E71CE3C34A00C4B865 /* RemoteEntityManager.m */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E6B25A671CB6FF58004AA4E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B25AD51CB6FFFF004AA4E4 /* NetConfig.h in Headers */,
+				E6B25AD81CB6FFFF004AA4E4 /* NetworkingFactory.h in Headers */,
+				E6B25B121CB6FFFF004AA4E4 /* WebRequestPoolItem.h in Headers */,
+				E6B25AF71CB6FFFF004AA4E4 /* WebCommandFactoryProtocol.h in Headers */,
+				E6B25B151CB6FFFF004AA4E4 /* WebRequestPoolItemFactory.h in Headers */,
+				E6B25ADA1CB6FFFF004AA4E4 /* NetworkState.h in Headers */,
+				E6B25ADF1CB6FFFF004AA4E4 /* NetworkStateSubscriber.h in Headers */,
+				E6B25ADD1CB6FFFF004AA4E4 /* NetworkStateObserver.h in Headers */,
+				E6B25B191CB6FFFF004AA4E4 /* WebRequestURLPropertyProtocol.h in Headers */,
+				E6B25ADB1CB6FFFF004AA4E4 /* NetworkStateHelper.h in Headers */,
+				E6B25B021CB6FFFF004AA4E4 /* WebRequestProtocol.h in Headers */,
+				E6B25B0F1CB6FFFF004AA4E4 /* WebRequestFactoryProtocol.h in Headers */,
+				E6B25AEA1CB6FFFF004AA4E4 /* WebCommandProtocol.h in Headers */,
+				E6B25B171CB6FFFF004AA4E4 /* WebRequestURLProperty.h in Headers */,
+				E6B25B141CB6FFFF004AA4E4 /* WebRequestPoolItemDelegate.h in Headers */,
+				E6B25B001CB6FFFF004AA4E4 /* WebRequest.h in Headers */,
+				E6B25AE41CB6FFFF004AA4E4 /* PostCommand.h in Headers */,
+				E6B25AE81CB6FFFF004AA4E4 /* UpdateCommand.h in Headers */,
+				E6B25AF31CB6FFFF004AA4E4 /* StandardWebCommandFactory.h in Headers */,
+				E6B25B051CB6FFFF004AA4E4 /* StandardPostRequest.h in Headers */,
+				E6B25B031CB6FFFF004AA4E4 /* StandardDeleteRequest.h in Headers */,
+				E6B25AF51CB6FFFF004AA4E4 /* WebCommandFactory.h in Headers */,
+				E6B25AE61CB6FFFF004AA4E4 /* ReadCommand.h in Headers */,
+				E6B25AF81CB6FFFF004AA4E4 /* DeleteRequest.h in Headers */,
+				E6B25AFA1CB6FFFF004AA4E4 /* PostRequest.h in Headers */,
+				E6B25AFC1CB6FFFF004AA4E4 /* ReadRequest.h in Headers */,
+				E6B25AEF1CB6FFFF004AA4E4 /* StandardReadCommand.h in Headers */,
+				E6B25B091CB6FFFF004AA4E4 /* StandardUpdateRequest.h in Headers */,
+				E6B25B101CB6FFFF004AA4E4 /* WebRequestPool.h in Headers */,
+				E6B25AFE1CB6FFFF004AA4E4 /* UpdateRequest.h in Headers */,
+				E6B25AED1CB6FFFF004AA4E4 /* StandardPostCommand.h in Headers */,
+				E6B25B0B1CB6FFFF004AA4E4 /* StandardWebRequestFactory.h in Headers */,
+				E6B25AF11CB6FFFF004AA4E4 /* StandardUpdateCommand.h in Headers */,
+				E6B25AEB1CB6FFFF004AA4E4 /* StandardDeleteCommand.h in Headers */,
+				E6B25AE01CB6FFFF004AA4E4 /* Reachability.h in Headers */,
+				E64BD2481CC57574003567CE /* DataScenariosManager.h in Headers */,
+				E6B25B071CB6FFFF004AA4E4 /* StandardReadRequest.h in Headers */,
+				E6FC19561CDBEE0F00C4B865 /* RemoteEntityDelegate.h in Headers */,
+				E6FC198E1CDCA96B00C4B865 /* RemoteEntityURLBuilder.h in Headers */,
+				E6FC19541CDBEE0F00C4B865 /* RemoteEntity.h in Headers */,
+				E6FC19D01CE39AB700C4B865 /* RemoteEntityUpdater.h in Headers */,
+				E6FC19CB1CE399A400C4B865 /* RemoteEntityFinder.h in Headers */,
+				E6FC19DF1CE39F9500C4B865 /* RemoteEntityMapper.h in Headers */,
+				E6FC19E81CE3C34A00C4B865 /* RemoteEntityManager.h in Headers */,
+				E6FC19E31CE3C0E600C4B865 /* RemoteEntityAttributesTransformer.h in Headers */,
+				E6FC19F01CE3EA6B00C4B865 /* RemoteEntityWebUpdater.h in Headers */,
+				E6FC19EC1CE3D71000C4B865 /* RemoteEntityManageable.h in Headers */,
+				E64BD24B1CC57675003567CE /* DataScenariosEntity.h in Headers */,
+				E6B25AE21CB6FFFF004AA4E4 /* DeleteCommand.h in Headers */,
+				E654A3B81D8750D20000F78F /* WebRequestPoolSaver.h in Headers */,
+				E6F8ADE11D4037F5001DED3F /* RemoteEntityAliasManager.h in Headers */,
+				E654A3BC1D8750E30000F78F /* WebRequestPoolLoader.h in Headers */,
+				E6B25B0D1CB6FFFF004AA4E4 /* WebRequestFactory.h in Headers */,
+				E600763D1D4828DB00734743 /* RemoteEntityConfigManager.h in Headers */,
+				E60076321D46CECE00734743 /* RemoteEntityQueryComparatorManager.h in Headers */,
+				E699EF5A1D21AEF300C261E7 /* RemoteEntityFactory.h in Headers */,
+				E6B9181A1DBA9D52004E483B /* RemoteEntityTransmissionState.h in Headers */,
+				E62F5B751E4D147000D8398F /* RemoteCreateResponseHandler.h in Headers */,
+				E62F5B811E4D20EF00D8398F /* RemoteReadAllResponseHandler.h in Headers */,
+				E64903E91D904B77002AE3BA /* RequestConsistencyContext.h in Headers */,
+				E62F5B6A1E4CFE4700D8398F /* WebResponseHandlerProtocol.h in Headers */,
+				E62F5B6D1E4D058000D8398F /* RemoteReadResponseHandler.h in Headers */,
+				E62F5B7D1E4D17EB00D8398F /* RemoteDeleteResponseHandler.h in Headers */,
+				E6770ADE1D8D4E9E00DA96DE /* WebRequestPoolActivityListener.h in Headers */,
+				E62F5B791E4D151700D8398F /* RemoteUpdateResponseHandler.h in Headers */,
+				E64903E51D904A5D002AE3BA /* RequestConsistencyRule.h in Headers */,
+				E60076261D4174FA00734743 /* RemoteEntityAttributesTransformerAdditions.h in Headers */,
+				E6E6D1FE1E41DE5C007C29E1 /* JSONWebRequestSerializer.h in Headers */,
+				E62F5B711E4D06FF00D8398F /* RemoteResponseHandler.h in Headers */,
+				E6E6D1FB1E41DD76007C29E1 /* WebRequestSerializerProtocol.h in Headers */,
+				E6DE1BA61DC77CB000FF4099 /* RemoteEntityTransmissionStateListener.h in Headers */,
+				E6B25A6E1CB6FF58004AA4E4 /* PeriapseNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E6B25A691CB6FF58004AA4E4 /* PeriapseNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6B25A7E1CB6FF58004AA4E4 /* Build configuration list for PBXNativeTarget "PeriapseNetworking" */;
+			buildPhases = (
+				E6B25A651CB6FF58004AA4E4 /* Sources */,
+				E6B25A661CB6FF58004AA4E4 /* Frameworks */,
+				E6B25A671CB6FF58004AA4E4 /* Headers */,
+				E6B25A681CB6FF58004AA4E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeriapseNetworking;
+			productName = "apside-networking";
+			productReference = E6B25A6A1CB6FF58004AA4E4 /* PeriapseNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E6B25A731CB6FF58004AA4E4 /* PeriapseNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6B25A811CB6FF58004AA4E4 /* Build configuration list for PBXNativeTarget "PeriapseNetworkingTests" */;
+			buildPhases = (
+				E6B25A701CB6FF58004AA4E4 /* Sources */,
+				E6B25A711CB6FF58004AA4E4 /* Frameworks */,
+				E6B25A721CB6FF58004AA4E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6B25A771CB6FF58004AA4E4 /* PBXTargetDependency */,
+			);
+			name = PeriapseNetworkingTests;
+			productName = "apside-networkingTests";
+			productReference = E6B25A741CB6FF58004AA4E4 /* PeriapseNetworking.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6B25A611CB6FF58004AA4E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Jérémy Voisin";
+				TargetAttributes = {
+					E65058CD1DDBC982001223FB = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					E6B25A691CB6FF58004AA4E4 = {
+						CreatedOnToolsVersion = 7.3;
+						ProvisioningStyle = Automatic;
+					};
+					E6B25A731CB6FF58004AA4E4 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = EUHCBPW6Z2;
+					};
+				};
+			};
+			buildConfigurationList = E6B25A641CB6FF58004AA4E4 /* Build configuration list for PBXProject "PeriapseNetworking" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6B25A601CB6FF58004AA4E4;
+			productRefGroup = E6B25A6B1CB6FF58004AA4E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6B25A691CB6FF58004AA4E4 /* PeriapseNetworking */,
+				E6B25A731CB6FF58004AA4E4 /* PeriapseNetworkingTests */,
+				E65058CD1DDBC982001223FB /* PeriapseNetworking-Universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6B25A681CB6FF58004AA4E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B25A721CB6FF58004AA4E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E65058D11DDBC99C001223FB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# 1\n# Set bash script to exit immediately if any commands fail.\nset -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=\"PeriapseNetworking\"\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n\n# 4\n# Build the framework for device and for simulator (using\n# all needed architectures).\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk \"iphoneos\"\n#xcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Release -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# 5\n# Remove .framework file if exists on Desktop from previous run.\nif [ -d \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\nfi\n\n# 6\n# Copy the device version of framework to Desktop.\ncp -r \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework\" \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework\"\n\n# 7\n# Replace the framework executable within the framework with\n# a new version created by merging the device and simulator\n# frameworks' executables with lipo.\nlipo -create -output \"${HOME}/Desktop/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" #\"${SRCROOT}/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n\n# 9\n# Delete the most recent build.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6B25A651CB6FF58004AA4E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E6D1FF1E41DE5C007C29E1 /* JSONWebRequestSerializer.m in Sources */,
+				E654A3BD1D8750E30000F78F /* WebRequestPoolLoader.m in Sources */,
+				E6B25B0C1CB6FFFF004AA4E4 /* StandardWebRequestFactory.m in Sources */,
+				E60076331D46CECE00734743 /* RemoteEntityQueryComparatorManager.m in Sources */,
+				E6B25B061CB6FFFF004AA4E4 /* StandardPostRequest.m in Sources */,
+				E6B25AFF1CB6FFFF004AA4E4 /* UpdateRequest.m in Sources */,
+				E6B25AF01CB6FFFF004AA4E4 /* StandardReadCommand.m in Sources */,
+				E62F5B821E4D20EF00D8398F /* RemoteReadAllResponseHandler.m in Sources */,
+				E6B25AFB1CB6FFFF004AA4E4 /* PostRequest.m in Sources */,
+				E6B25B0E1CB6FFFF004AA4E4 /* WebRequestFactory.m in Sources */,
+				E6B25ADE1CB6FFFF004AA4E4 /* NetworkStateObserver.m in Sources */,
+				E6B25B161CB6FFFF004AA4E4 /* WebRequestPoolItemFactory.m in Sources */,
+				E62F5B7E1E4D17EB00D8398F /* RemoteDeleteResponseHandler.m in Sources */,
+				E699EF5B1D21AEF300C261E7 /* RemoteEntityFactory.m in Sources */,
+				E6B25B131CB6FFFF004AA4E4 /* WebRequestPoolItem.m in Sources */,
+				E6FC19E41CE3C0E600C4B865 /* RemoteEntityAttributesTransformer.m in Sources */,
+				E654A3B91D8750D20000F78F /* WebRequestPoolSaver.m in Sources */,
+				E6F8ADE21D4037F5001DED3F /* RemoteEntityAliasManager.m in Sources */,
+				E60076271D4174FA00734743 /* RemoteEntityAttributesTransformerAdditions.m in Sources */,
+				E6B25AFD1CB6FFFF004AA4E4 /* ReadRequest.m in Sources */,
+				E62F5B7A1E4D151700D8398F /* RemoteUpdateResponseHandler.m in Sources */,
+				E6FC198F1CDCA96B00C4B865 /* RemoteEntityURLBuilder.m in Sources */,
+				E64BD2491CC57574003567CE /* DataScenariosManager.m in Sources */,
+				E62F5B761E4D147000D8398F /* RemoteCreateResponseHandler.m in Sources */,
+				E6B25AEC1CB6FFFF004AA4E4 /* StandardDeleteCommand.m in Sources */,
+				E6FC19ED1CE3D71000C4B865 /* RemoteEntityManageable.m in Sources */,
+				E6FC19E91CE3C34A00C4B865 /* RemoteEntityManager.m in Sources */,
+				E6B25ADC1CB6FFFF004AA4E4 /* NetworkStateHelper.m in Sources */,
+				E6B25AE31CB6FFFF004AA4E4 /* DeleteCommand.m in Sources */,
+				E6FC19D11CE39AB700C4B865 /* RemoteEntityUpdater.m in Sources */,
+				E6B25AEE1CB6FFFF004AA4E4 /* StandardPostCommand.m in Sources */,
+				E6FC19E01CE39F9500C4B865 /* RemoteEntityMapper.m in Sources */,
+				E6B25AF91CB6FFFF004AA4E4 /* DeleteRequest.m in Sources */,
+				E6B25B181CB6FFFF004AA4E4 /* WebRequestURLProperty.m in Sources */,
+				E6FC19551CDBEE0F00C4B865 /* RemoteEntity.m in Sources */,
+				E6B25AF61CB6FFFF004AA4E4 /* WebCommandFactory.m in Sources */,
+				E6B25AF41CB6FFFF004AA4E4 /* StandardWebCommandFactory.m in Sources */,
+				E6B25AE91CB6FFFF004AA4E4 /* UpdateCommand.m in Sources */,
+				E62F5B6E1E4D058000D8398F /* RemoteReadResponseHandler.m in Sources */,
+				E62F5B721E4D06FF00D8398F /* RemoteResponseHandler.m in Sources */,
+				E6B25B081CB6FFFF004AA4E4 /* StandardReadRequest.m in Sources */,
+				E6B25AE71CB6FFFF004AA4E4 /* ReadCommand.m in Sources */,
+				E64903EA1D904B77002AE3BA /* RequestConsistencyContext.m in Sources */,
+				E6B25B041CB6FFFF004AA4E4 /* StandardDeleteRequest.m in Sources */,
+				E6B25B011CB6FFFF004AA4E4 /* WebRequest.m in Sources */,
+				E6B25AD91CB6FFFF004AA4E4 /* NetworkingFactory.m in Sources */,
+				E64903E61D904A5D002AE3BA /* RequestConsistencyRule.m in Sources */,
+				E6B25AF21CB6FFFF004AA4E4 /* StandardUpdateCommand.m in Sources */,
+				E6FC19CC1CE399A400C4B865 /* RemoteEntityFinder.m in Sources */,
+				E6B25AE51CB6FFFF004AA4E4 /* PostCommand.m in Sources */,
+				E6FC19F11CE3EA6B00C4B865 /* RemoteEntityWebUpdater.m in Sources */,
+				E600763E1D4828DB00734743 /* RemoteEntityConfigManager.m in Sources */,
+				E6B25AD61CB6FFFF004AA4E4 /* NetConfig.m in Sources */,
+				E6B25B111CB6FFFF004AA4E4 /* WebRequestPool.m in Sources */,
+				E6B25AE11CB6FFFF004AA4E4 /* Reachability.m in Sources */,
+				E6B25B0A1CB6FFFF004AA4E4 /* StandardUpdateRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6B25A701CB6FF58004AA4E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6B25A7A1CB6FF58004AA4E4 /* periapse_networkingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6B25A771CB6FF58004AA4E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6B25A691CB6FF58004AA4E4 /* PeriapseNetworking */;
+			targetProxy = E6B25A761CB6FF58004AA4E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E65058CF1DDBC983001223FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = "";
+				DEVELOPMENT_TEAM = EUHCBPW6Z2;
+				ENABLE_BITCODE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode-marker";
+				OTHER_LIBTOOLFLAGS = "-fembed-bitcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E65058D01DDBC983001223FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				DEVELOPMENT_TEAM = EUHCBPW6Z2;
+				ENABLE_BITCODE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-fembed-bitcode";
+				OTHER_LIBTOOLFLAGS = "-fembed-bitcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E6B25A7C1CB6FF58004AA4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E6B25A7D1CB6FF58004AA4E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E6B25A7F1CB6FF58004AA4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: voisin.jeremy72@gmail.com (X6QM4Z234H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EUHCBPW6Z2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/pariapse-networking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = PeriapseNetworking;
+				PRODUCT_NAME = PeriapseNetworking;
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		E6B25A801CB6FF58004AA4E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: voisin.jeremy72@gmail.com (X6QM4Z234H)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = EUHCBPW6Z2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/pariapse-networking/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "";
+				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
+				OTHER_LDFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = PeriapseNetworking;
+				PRODUCT_NAME = PeriapseNetworking;
+				SKIP_INSTALL = NO;
+			};
+			name = Release;
+		};
+		E6B25A821CB6FF58004AA4E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "periapse-networkingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "periapse-networkingTests";
+				PRODUCT_NAME = PeriapseNetworking;
+			};
+			name = Debug;
+		};
+		E6B25A831CB6FF58004AA4E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "periapse-networkingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "periapse-networkingTests";
+				PRODUCT_NAME = PeriapseNetworking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E65058CE1DDBC983001223FB /* Build configuration list for PBXAggregateTarget "PeriapseNetworking-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E65058CF1DDBC983001223FB /* Debug */,
+				E65058D01DDBC983001223FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6B25A641CB6FF58004AA4E4 /* Build configuration list for PBXProject "PeriapseNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B25A7C1CB6FF58004AA4E4 /* Debug */,
+				E6B25A7D1CB6FF58004AA4E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6B25A7E1CB6FF58004AA4E4 /* Build configuration list for PBXNativeTarget "PeriapseNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B25A7F1CB6FF58004AA4E4 /* Debug */,
+				E6B25A801CB6FF58004AA4E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6B25A811CB6FF58004AA4E4 /* Build configuration list for PBXNativeTarget "PeriapseNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6B25A821CB6FF58004AA4E4 /* Debug */,
+				E6B25A831CB6FF58004AA4E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6B25A611CB6FF58004AA4E4 /* Project object */;
+}

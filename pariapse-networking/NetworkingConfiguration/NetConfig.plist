@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>TrustedHosts</key>
+	<array>
+		<string>collaborateurs.apside.fr</string>
+	</array>
+	<key>WebRequestFactoryType</key>
+	<string>StandardWebRequestFactory</string>
+	<key>WebCommandFactoryType</key>
+	<string>StandardWebCommandFactory</string>
+</dict>
+</plist>
