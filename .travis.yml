@@ -1,12 +1,12 @@
 language: objective-c
 osx_image: xcode10.2
 env:
-- DESTINATION="OS=11.0,name=iPhone 6" SCHEME="PeriapseNetworking-Universal" SDK=iphonesimulator
+- DESTINATION="OS=8.0,name=iPhone 6" SCHEME="PeriapseNetworking-Universal" SDK=iphoneos
 
 before_install:
 - brew update
 - brew outdated carthage || brew upgrade carthage
-- cd Framework-iOS && carthage update --platform iOS
+- carthage update --platform iOS
 - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 
 script:
