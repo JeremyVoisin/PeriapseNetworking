@@ -1,0 +1,7 @@
+language: objective-c
+
+osx_image: xcode10.2
+
+xcode_project: PeriapseNetworking.xcodeproj
+xcode_scheme: PeriapseNetworking-Universal
+xcode_destination: platform=iOS Simulator,OS=8.0,name=iPhone 5S
