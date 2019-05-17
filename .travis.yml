@@ -11,12 +11,12 @@ script:
   i386 only_active_arch=no defines_module=yes -sdk "iphonesimulator"
 - cp -r "${HOME}/build/JeremyVoisin/PeriapseNetworking/build/Release-iphoneos/${FRAMEWORK_NAME}.framework" "${HOME}/build/${FRAMEWORK_NAME}.framework"
 - lipo -create -output "${HOME}/build/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}" "${HOME}/build/JeremyVoisin/PeriapseNetworking/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}" "${HOME}/build/JeremyVoisin/PeriapseNetworking/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}"
-- zip ${HOME}/build/${FRAMEWORK_NAME}.framework
+- zip "${HOME}/build/${RELEASE_NAME}.zip" "${HOME}/build/${FRAMEWORK_NAME}.framework"
 deploy:
   provider: releases
   api_key:
     secure: hK3yS011sj77/7mx1vvR6JPHZaVv5nCBP2aeKdK5XljPLkfS9YlCuRwRbs3dbf19Yhmkg35cKgrSvHK0hXUbJIsELN6P8w9fInTVgC+afNTNLC+ZLR2Hf5VUGMiCD6bvhhmm1E7h5VO05qvKk3cFHXIngEBfgAwdwqoFgm16dglC7cdbvkfgjioNiruPKO5IeDXbKvN3ePWGuTB4CfM/p7PJw1M+hvHrFB5yAUdxHfCJF471RkERlUJ2VrqNh9M4HJDZUNAjh+cktvxZUS13ZdbxDghWc0vbgqWUUa1beiKABPFEOovLpX56ZEbyUZX76DgFhi4WdZAuR4Bd00KmEd+yWk2d0I+AF3+ViWF8gCooMhvPXyjaybtUyCWRUZxEIBFQx6Lv3+iGwREeIH1Wf5Go0B8Sdn00aOrRVTIBIot0Q4txi3Gmwm3S7CVimgipZqGB3CF6HwxBLckZpZk9bAkeMnSSgHRuXnQOuxIiUruYvLdb2UmkgfqENw0tD0+e2nKF5OsQGscNW8qpdw3cdmVAWb4ZdhcVTvNRpOq/45ubPYExeLxmVCFZE6ErhSkoEFMT9fy5xDP8qdpQR7YlkkS1KGK176F6k6GvNR9FvnMs/9zG+xXjpL/KRzLQbjtbwlbVkdKZG4RpY9M9MDOd0yvWLTbpNdWBbxxBRn2oTRE=
-  file: "${HOME}/build/${FRAMEWORK_NAME}.framework.zip"
+  file: "${HOME}/build/${RELEASE_NAME}.zip"
   on:
     repo: JeremyVoisin/PeriapseNetworking
     tags: true
