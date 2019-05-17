@@ -9,8 +9,8 @@ script:
   armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk "iphoneos"
 - xcodebuild -target $FRAMEWORK_NAME -configuration Release -arch x86_64 -arch
   i386 only_active_arch=no defines_module=yes -sdk "iphonesimulator"
-- cp -r "${HOME}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework" "${HOME}/Desktop/${FRAMEWORK_NAME}.framework"
-- lipo -create -output "${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}" "${HOME}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}"
+- cp -r "${HOME}/JeremyVoisin/PeriapseNetworking/build/Release-iphoneos/${FRAMEWORK_NAME}.framework" "${FRAMEWORK_NAME}.framework"
+- lipo -create -output "${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}" "${HOME}/JeremyVoisin/PeriapseNetworking/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}"
 deploy:
   provider: releases
   api_key:
