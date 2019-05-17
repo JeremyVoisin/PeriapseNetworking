@@ -8,3 +8,4 @@ before_install:
 
 script:
 - xcodebuild -target "PeriapseNetworking" -configuration Release -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk "iphoneos"
+- xcodebuild -target "PeriapseNetworking" -configuration Release -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk "iphonesimulator"
