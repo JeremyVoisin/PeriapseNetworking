@@ -2,10 +2,17 @@ language: objective-c
 osx_image: xcode10.2
 env:
 - DESTINATION="OS=8.0,name=iPhone 6" SCHEME="PeriapseNetworking-Universal" SDK=iphoneos
-
 before_install:
 - gem install xcpretty --quiet
-
 script:
-- xcodebuild -target "PeriapseNetworking" -configuration Release -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk "iphoneos"
-- xcodebuild -target "PeriapseNetworking" -configuration Release -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk "iphonesimulator"
+- xcodebuild -target "PeriapseNetworking" -configuration Release -arch arm64 -arch
+  armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk "iphoneos"
+- xcodebuild -target "PeriapseNetworking" -configuration Release -arch x86_64 -arch
+  i386 only_active_arch=no defines_module=yes -sdk "iphonesimulator"
+deploy:
+  provider: releases
+  api_key:
+    secure: hK3yS011sj77/7mx1vvR6JPHZaVv5nCBP2aeKdK5XljPLkfS9YlCuRwRbs3dbf19Yhmkg35cKgrSvHK0hXUbJIsELN6P8w9fInTVgC+afNTNLC+ZLR2Hf5VUGMiCD6bvhhmm1E7h5VO05qvKk3cFHXIngEBfgAwdwqoFgm16dglC7cdbvkfgjioNiruPKO5IeDXbKvN3ePWGuTB4CfM/p7PJw1M+hvHrFB5yAUdxHfCJF471RkERlUJ2VrqNh9M4HJDZUNAjh+cktvxZUS13ZdbxDghWc0vbgqWUUa1beiKABPFEOovLpX56ZEbyUZX76DgFhi4WdZAuR4Bd00KmEd+yWk2d0I+AF3+ViWF8gCooMhvPXyjaybtUyCWRUZxEIBFQx6Lv3+iGwREeIH1Wf5Go0B8Sdn00aOrRVTIBIot0Q4txi3Gmwm3S7CVimgipZqGB3CF6HwxBLckZpZk9bAkeMnSSgHRuXnQOuxIiUruYvLdb2UmkgfqENw0tD0+e2nKF5OsQGscNW8qpdw3cdmVAWb4ZdhcVTvNRpOq/45ubPYExeLxmVCFZE6ErhSkoEFMT9fy5xDP8qdpQR7YlkkS1KGK176F6k6GvNR9FvnMs/9zG+xXjpL/KRzLQbjtbwlbVkdKZG4RpY9M9MDOd0yvWLTbpNdWBbxxBRn2oTRE=
+  file: PeriapseNetworking.framework
+  on:
+    repo: JeremyVoisin/PeriapseNetworking
