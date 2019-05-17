@@ -12,6 +12,7 @@ script:
 - cp -r "${HOME}/build/JeremyVoisin/PeriapseNetworking/build/Release-iphoneos/${FRAMEWORK_NAME}.framework" "${HOME}/build/${FRAMEWORK_NAME}.framework"
 - lipo -create -output "${HOME}/build/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}" "${HOME}/build/JeremyVoisin/PeriapseNetworking/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}" "${HOME}/build/JeremyVoisin/PeriapseNetworking/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}"
 - zip "${HOME}/build/${RELEASE_NAME}.zip" "${HOME}/build/${FRAMEWORK_NAME}.framework"
+
 deploy:
   provider: releases
   api_key:
