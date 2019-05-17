@@ -1,7 +1,6 @@
 language: objective-c
 osx_image: xcode10.2
 env:
-- DESTINATION="OS=8.0,name=iPhone 6" SCHEME="PeriapseNetworking-Universal" SDK=iphoneos
 - FRAMEWORK_NAME="PeriapseNetworking"
 before_install:
 - gem install xcpretty --quiet
@@ -10,8 +9,8 @@ script:
   armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk "iphoneos"
 - xcodebuild -target $FRAMEWORK_NAME -configuration Release -arch x86_64 -arch
   i386 only_active_arch=no defines_module=yes -sdk "iphonesimulator"
-- cp -r "${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework" "${HOME}/Desktop/${FRAMEWORK_NAME}.framework"
-- lipo -create -output "${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}" "${SRCROOT}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}"
+- cp -r "${HOME}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework" "${HOME}/Desktop/${FRAMEWORK_NAME}.framework"
+- lipo -create -output "${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}" "${HOME}/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}"
 deploy:
   provider: releases
   api_key:
