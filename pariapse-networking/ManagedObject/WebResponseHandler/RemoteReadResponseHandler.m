@@ -1,10 +1,11 @@
-//
-//  RemoteReadResponseHandler.m
-//  PeriapseNetworking
-//
-//  Created by Jérémy Voisin on 09/02/2017.
-//  Copyright © 2017 Jérémy Voisin. All rights reserved.
-//
+/*!
+ * @file RemoteReadResponseHandler.m
+ * @framework PeriapseNetworking
+
+ * @author Jérémy Voisin
+ * @copyright © 2019 Jérémy Voisin
+ * @version 1.0
+ */
 
 #import "RemoteReadResponseHandler.h"
 #import "WebRequest.h"
