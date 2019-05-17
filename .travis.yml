@@ -11,7 +11,7 @@ script:
   i386 only_active_arch=no defines_module=yes -sdk "iphonesimulator"
 - cp -r "${HOME}/build/JeremyVoisin/PeriapseNetworking/build/Release-iphoneos/${FRAMEWORK_NAME}.framework" "${HOME}/build/${FRAMEWORK_NAME}.framework"
 - lipo -create -output "${HOME}/build/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}" "${HOME}/build/JeremyVoisin/PeriapseNetworking/build/Release-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}" "${HOME}/build/JeremyVoisin/PeriapseNetworking/build/Release-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}"
-- zip "${HOME}/build/${RELEASE_NAME}.zip" "${HOME}/build/${FRAMEWORK_NAME}.framework"
+- cd ${HOME}/build/ && zip "${HOME}/build/${RELEASE_NAME}.zip" "${FRAMEWORK_NAME}.framework"
 
 deploy:
   provider: releases
