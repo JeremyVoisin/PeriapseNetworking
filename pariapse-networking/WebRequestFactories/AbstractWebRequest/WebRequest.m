@@ -21,7 +21,7 @@
 @synthesize httpStatus;
 @synthesize response;
 @synthesize isAsync;
-@synthesize property;
+@dynamic property;
 @synthesize httpURLResponse;
 
 +(NSArray*) abstractSuclasses{
@@ -48,7 +48,7 @@
 		@throw [NSException exceptionWithName:NSInternalInconsistencyException
 				reason:@"Error, attempting to instantiate AbstractWebRequest directly." userInfo:nil];
 	}
-	property = [[WebRequestURLProperty alloc]init];
+	self.property = [[WebRequestURLProperty alloc]init];
     url = thisUrl;
 	isAsync = false;
     return self;
@@ -158,7 +158,7 @@
 	[encoder encodeObject:url forKey:@"url"];
 	[encoder encodeObject:toSend forKey:@"toSend"];
 	[encoder encodeBool:isAsync forKey:@"isAsync"];
-	[encoder encodeObject:property forKey:@"wrProperty"];
+	[encoder encodeObject:self.property forKey:@"wrProperty"];
 }
 
 

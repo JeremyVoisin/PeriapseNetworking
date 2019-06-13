@@ -1018,6 +1018,7 @@
 				DEVELOPMENT_TEAM = EUHCBPW6Z2;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fembed-bitcode-marker";
+				PRODUCT_BUNDLE_IDENTIFIER = PeriapseNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};
@@ -1030,6 +1031,7 @@
 				DEVELOPMENT_TEAM = EUHCBPW6Z2;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fembed-bitcode";
+				PRODUCT_BUNDLE_IDENTIFIER = PeriapseNetworking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = "arm64 arm64e armv7 armv7s";
 			};

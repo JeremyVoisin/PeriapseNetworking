@@ -12,25 +12,25 @@
 @synthesize property;
 
 - (void)setProperty:(id<WebRequestURLPropertyProtocol>)aProperty{
-	if(self.property != nil)[self.property setProperty:aProperty];
-	else if(aProperty != nil)self.property = aProperty;
+	if(property != nil && property != self && aProperty != self)[property setProperty:aProperty];
+	else if(aProperty != nil && aProperty != self)property = aProperty;
 }
 
 - (void)setProperties:(NSSet *)properties{
 	for(id<WebRequestURLPropertyProtocol> aProperty in properties){
-		if(self.property != nil)[self.property setProperty:aProperty];
-		else self.property = aProperty;
+		if(property != nil && property != self && aProperty != self)[property setProperty:aProperty];
+		else if (aProperty != self && property != self) property = aProperty;
 	}
 }
 
 - (void)setRequestProperty:(NSMutableURLRequest*)request{
-	if(self.property != nil)[self.property setRequestProperty:request];
+	if(property != nil)[self.property setRequestProperty:request];
 }
 
 #pragma NSCoding
 - (id)initWithCoder:(NSCoder *)decoder {
 	if (self = [super init]) {
-		self.property = [decoder decodeObjectForKey:@"property"];
+		property = [decoder decodeObjectForKey:@"property"];
 	}
 	return self;
 }
